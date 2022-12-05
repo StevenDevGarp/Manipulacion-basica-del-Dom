@@ -4,9 +4,8 @@ const calculo2 = document.querySelector('#calculo2');
 const btncalcular = document.querySelector('#btnCalcular');
 const presult  = document.querySelector('#result');
 
+btncalcular.addEventListener('click', btnOnClick);
 
 function btnOnClick(){
 presult.innerHTML ="resultado es: " + (parseInt(calculo1.value) + parseInt(calculo2.value));
 }
-
-
